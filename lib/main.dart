@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
-import 'task_progress_screen.dart';
+import 'package:progressbar2/task_liner_progress.dart';
+import 'task_circular_progress_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,8 +10,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: TaskProgressScreen(),
+    return const MaterialApp(
+      home: TaskProgressScreen2(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
